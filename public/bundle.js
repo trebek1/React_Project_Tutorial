@@ -23632,6 +23632,7 @@
 	var Profile = React.createClass({
 		displayName: 'Profile',
 
+		mixins: [Router.State],
 		getInitialState: function getInitialState() {
 			return {
 				notes: [],
@@ -23640,13 +23641,15 @@
 			};
 		},
 		render: function render() {
+			var username = this.getParams().username;
 			return React.createElement(
 				'div',
 				{ className: 'row' },
 				React.createElement(
 					'div',
 					{ className: 'col-md-4' },
-					'User Profile Component'
+					'User Profile Component --> ',
+					username
 				),
 				React.createElement(
 					'div',
