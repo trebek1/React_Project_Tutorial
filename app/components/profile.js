@@ -59,7 +59,6 @@ var Profile = React.createClass({
 				</div>
 			</div>
 		)
-		
 	}
 }); 
 

@@ -23869,19 +23869,19 @@
 						"Company: ",
 						this.props.bio.company
 					),
-					this.props.bio.followers && React.createElement(
+					this.props.bio.followers > 0 && React.createElement(
 						"li",
 						{ className: "list-group-item" },
 						"Followers: ",
 						this.props.bio.followers
 					),
-					this.props.bio.following && React.createElement(
+					this.props.bio.following > 0 && React.createElement(
 						"li",
 						{ className: "list-group-item" },
 						"Following: ",
 						this.props.bio.following
 					),
-					this.props.bio.following && React.createElement(
+					this.props.bio.public_repos && React.createElement(
 						"li",
 						{ className: "list-group-item" },
 						"Public Repos: ",
